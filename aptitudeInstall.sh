@@ -14,6 +14,7 @@ COL_CYAN=$ESC_SEQ"36;01m"
 aptitude install build-essential &&                     echo -e "$COL_GREEN build-essential instalada $COL_RESET" && 
 aptitude install calibre &&                             echo -e "$COL_GREEN calibre instalada $COL_RESET" && 
 aptitude install filezilla &&                           echo -e "$COL_GREEN filezilla instalada $COL_RESET" && 
+aptitude install firmware-realtek &&                    echo -e "$COL_GREEN firmware-realtek instalada $COL_RESET" && 
 aptitude install g++ &&                                 echo -e "$COL_GREEN g++ instalada $COL_RESET" && 
 aptitude install gimp &&                                echo -e "$COL_GREEN gimp instalada $COL_RESET" && 
 aptitude install gnome-do &&                            echo -e "$COL_GREEN gnome-do instalada $COL_RESET" && 
@@ -21,7 +22,6 @@ aptitude install google-chrome-stable &&                echo -e "$COL_GREEN goog
 aptitude install gparted &&                             echo -e "$COL_GREEN gparted instalada $COL_RESET" && 
 aptitude install guake &&                               echo -e "$COL_GREEN guake instalada $COL_RESET" && 
 aptitude install lyx &&                                 echo -e "$COL_GREEN lyx instalada $COL_RESET" && 
-aptitude install xchm &&                                echo -e "$COL_GREEN xchm instalada $COL_RESET" && 
 aptitude install pandoc &&                              echo -e "$COL_GREEN pandoc instalada $COL_RESET" && 
 aptitude install phatch &&                              echo -e "$COL_GREEN phatch instalada $COL_RESET" && 
 aptitude install podbrowser &&                          echo -e "$COL_GREEN podbrowser instalada $COL_RESET" && 
@@ -38,6 +38,7 @@ aptitude install vim-gtk &&                             echo -e "$COL_GREEN vim-
 aptitude install virtualbox &&                          echo -e "$COL_GREEN virtualbox instalada $COL_RESET" && 
 aptitude install vlc &&                                 echo -e "$COL_GREEN vlc instalada $COL_RESET" && 
 aptitude install wicd-{client,gtk} &&                   echo -e "$COL_GREEN wicd-{client,gtk} instalada $COL_RESET" && 
+aptitude install xchm &&                                echo -e "$COL_GREEN xchm instalada $COL_RESET" && 
 aptitude install zim &&                                 echo -e "$COL_GREEN zim instalada $COL_RESET" && 
 
 ### Development
