@@ -69,12 +69,4 @@ aptitude install libwww-mechanize-perl &&               echo -e "$COL_GREEN libw
 aptitude install lib{test-,}www-mechanize-perl &&       echo -e "$COL_GREEN lib{test-,}www-mechanize-perl instalada $COL_RESET" && 
 aptitude install perltidy &&                            echo -e "$COL_GREEN perltidy instalada $COL_RESET" && 
 
-### Node
-
-### Yeoman
-
-### Bundle vim
-
-### Config dotfiles
-
 echo -e "$COL_RED INSTALACION TERMINADA  $COL_RESET" 
