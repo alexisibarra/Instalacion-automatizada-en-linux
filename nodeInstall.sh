@@ -20,4 +20,5 @@ cd node-v0.10.33 &&
 ./configure &&
 make &&
 make install &&
+cd ../../ &&
 rm -r .tmp
