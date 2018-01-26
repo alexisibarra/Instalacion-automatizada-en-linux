@@ -12,13 +12,13 @@ COL_CYAN=$ESC_SEQ"36;01m"
 
 ### Instalando Node
 mkdir .tmp &&
-wget http://nodejs.org/dist/v6.11.2/node-v6.11.2.tar.gz -P .tmp &&
+wget http://nodejs.org/dist/v8.9.4/node-v8.9.4.tar.gz -P .tmp &&
 cd .tmp &&
-tar -xvzf node-v6.11.2.tar.gz &&
-rm node-v6.11.2.tar.gz &&
-cd node-v6.11.2 &&
+tar -xvzf node-v8.9.4.tar.gz &&
+rm node-v8.9.4.tar.gz &&
+cd node-v8.9.4 &&
 ./configure &&
 make &&
-make install &&
+sudo make install &&
 cd ../../ &&
 rm -r .tmp
