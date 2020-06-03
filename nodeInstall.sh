@@ -1,21 +1,12 @@
 # #!/bin/bash
 
-### Instalando Node
-# mkdir .tmp &&
-# wget http://nodejs.org/dist/v8.9.4/node-v8.9.4.tar.gz -P .tmp &&
-# cd .tmp &&
-# tar -xvzf node-v8.9.4.tar.gz &&
-# rm node-v8.9.4.tar.gz &&
-# cd node-v8.9.4 &&
-# ./configure &&
-# make &&
-# sudo make install &&
-# cd ../../ &&
-# rm -r .tmp
+curl -sSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
 
+VERSION=node_12.x
 
-# Adding the NodeSource APT repository for Debian-based distributions repository AND the PGP key for verifying packages
-curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+DISTRO="$(lsb_release -s -c)"
+echo "deb https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+echo "deb-src https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee -a /etc/apt/sources.list.d/nodesource.list
 
-# Install Node.js from the Debian-based distributions repository
-sudo apt-get install -y nodejs
+sudo apt-get update
+sudo apt-get install nodejs
