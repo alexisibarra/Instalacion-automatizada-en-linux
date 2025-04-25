@@ -1,5 +1,3 @@
-# curl -fsSL get.docker.com -o get-docker.sh
-# sh get-docker.sh
-# rm get-docker.sh
+./setupAptForDocker.sh
 
-sudo apt install docker.io
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
